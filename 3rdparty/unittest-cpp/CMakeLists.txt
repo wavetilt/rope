@@ -42,6 +42,8 @@ if(${UTPP_USE_PLUS_SIGN})
 	set_target_properties(UnitTest++ PROPERTIES OUTPUT_NAME UnitTest++)
 endif()
 
+# NOTE(wavetilt): we added this to keep things nice and modular. It is not in the upstream repo.
+target_include_directories (UnitTest++ PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}")
 
 # build the test runner
 file(GLOB TEST_SRCS RELATIVE ${CMAKE_CURRENT_SOURCE_DIR} tests/*.cpp tests/*.h)
