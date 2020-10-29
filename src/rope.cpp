@@ -14,7 +14,7 @@ namespace rope
 	using std::string;
 
 	// out-of-bounds error constant
-	std::invalid_argument ERROR_OOB_ROPE = std::invalid_argument("Error: string index out of bounds");
+	std::invalid_argument ERROR_OOB_ROPE = std::invalid_argument("string index out of bounds");
 
 	// Default constructor - produces a rope representing the empty string
 	rope::rope() : rope("")
